@@ -18,6 +18,4 @@ python main.py
 ```
 
 ## Results
-Interestingly, only 25 of their wines are assigned scores, and those scores range from 83 to 88. Two wines have the highest score, one of which is £9.99 (Amour de Bordeaux, Sauternes) and the other is £5.49 (Forteza dei Colli Chianti Classico). If I was feeling snazzy I'd turn the plot into something interactive.
-
-![Results](results.png?raw=true "Results")
+Can be viewed [here]( http://htmlpreview.github.com/?https://github.com/bartaz/impress.js/blob/master/index.html)
