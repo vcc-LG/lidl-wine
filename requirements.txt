@@ -1,0 +1,8 @@
+requests==2.12.4
+opencv_python==3.2.0.7
+pytesseract==0.1.7
+matplotlib==2.0.2
+numpy==1.14.0
+Image==1.5.17
+Pillow==5.0.0
+beautifulsoup4==4.6.0
