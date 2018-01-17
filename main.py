@@ -60,7 +60,7 @@ def analyse_circle(circle, image):
     extracted_digits = resized_image[35:130,30:175]
     extracted_digits = cv2.cvtColor(extracted_digits, cv2.COLOR_BGR2GRAY)
     extracted_digits = cv2.bitwise_not(extracted_digits)
-    extracted_digits_resize = cv2.resize(extracted_digits, (200, 200))
+    extracted_digits_resize = cv2.resize(extracted_digits, (400, 400))
     cv2.imwrite('extracted_digits.png',extracted_digits_resize)
     pytesseract.pytesseract.tesseract_cmd = r'/usr/local/bin/tesseract'
     extracted_digits_vals = pytesseract.image_to_string(Image.open('extracted_digits.png'))
@@ -142,7 +142,7 @@ def plot_data(list_of_dicts, list_of_prices, list_of_scores):
     ax.set_title("Lidl Wine vs. Score", size=30)
     ax.set_xlabel('Score',fontsize=20)
     ax.set_ylabel('Price (£)',fontsize=20)
-    ax.set_xlim([82, 89])
+    ax.set_xlim([81.5, 90])
     labels = ['{0}'.format(i['name']) for i in list_of_dicts]
     tooltip = mpld3.plugins.PointLabelTooltip(scatter, labels=labels)
     mpld3.plugins.connect(fig, tooltip)
